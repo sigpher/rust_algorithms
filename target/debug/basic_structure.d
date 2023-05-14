@@ -1,1 +1,0 @@
-/home/choi/projects/rust_algorithms/target/debug/basic_structure: /home/choi/projects/rust_algorithms/basic_structure/src/lib.rs /home/choi/projects/rust_algorithms/basic_structure/src/main.rs /home/choi/projects/rust_algorithms/basic_structure/src/stack/stack.rs /home/choi/projects/rust_algorithms/basic_structure/src/stack.rs
