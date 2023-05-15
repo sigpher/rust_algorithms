@@ -1,11 +1,10 @@
-
 pub mod linkedlist;
 pub use linkedlist::*;
-
 pub mod deque;
-pub mod queue;
-pub mod stack;
 pub use deque::*;
+pub mod queue;
 pub use queue::*;
+pub mod stack;
 pub use stack::*;
-
+pub mod liststack;
+pub use liststack::*;
