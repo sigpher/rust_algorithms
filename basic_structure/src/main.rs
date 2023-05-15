@@ -1,23 +1,28 @@
+use basic_structure::LVec;
 // use basic_structure::deque::*;
 // use basic_structure::queue::*;
 // use basic_structure::stack::*;
 use basic_structure::linkedlist::*;
-use basic_structure::liststack::*;
+// use basic_structure::liststack::*;
 
 fn main() {
-    // basics();
-    // into_iter();
-    // iter();
-    // iter_mut();
+    let mut lvec = LVec::new();
+    lvec.push(10);
+    lvec.push(11);
+    lvec.push(12);
+    lvec.push(13);
+    lvec.insert(0, 9);
 
-    let mut s = ListStack::new();
-    s.push(1);
-    s.push(2);
-    s.push(4);
+    let mut lvec2 = LVec::new();
+    lvec2.insert(0, 8);
+    lvec2.append(&mut lvec);
+    println!("lvec2 len: {}", lvec2.len());
+    lvec2.print_lvec();
 
-    println!("top {:?}, size{}", s.peek().unwrap(), s.size());
-    println!("pop {:?}, size{}", s.pop().unwrap(), s.size());
-    println!("is_empty {}, stack: {:?}", s.is_empty(), s);
+    let res1 = lvec2.pop();
+    let res2 = lvec2.remove(0);
+    println!("pop {:#?}", res1.unwrap());
+    println!("remove {:#?}", res2.unwrap());
 }
 
 fn basics() {
