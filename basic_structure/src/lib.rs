@@ -1,5 +1,6 @@
+pub mod deque;
+pub mod queue;
 pub mod stack;
-pub use stack::base_converter;
-pub use stack::divide_by_two;
-pub use stack::par_checker;
-pub use stack::Stack;
+pub use deque::*;
+pub use queue::*;
+pub use stack::*;
