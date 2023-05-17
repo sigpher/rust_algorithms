@@ -1,2 +1,2 @@
 [workspace]
-members = ["basic_structure","recursion"]
+members = ["basic_structure","recursion","search"]
