@@ -16,7 +16,8 @@ fn main() {
     // println!("{bin}");
 
     let cashes = [1, 5, 10, 20, 50];
-    let amount = 81_u32;
+    let amount = 31_u32;
 
     let cashe_num = rec_mc1(&cashes, amount);
+    println!("{cashe_num}");
 }
